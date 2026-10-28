@@ -9,9 +9,6 @@ http:
   auth: inherit
 
 runtime:
-  variables:
-    - name: baseURL
-      value: http://localhost:5000
   scripts:
     - type: tests
       code: |-
@@ -25,6 +22,6 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-  forwardAuthorizationHeader: true
 
-docs: Health check. Needs no login.
+docs: |-
+  Health check. Needs no login.
