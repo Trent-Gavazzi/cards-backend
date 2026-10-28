@@ -1,0 +1,5 @@
+request -> server.js -> routes/index.js -> routes/users.js -> middleware -> controller -> model -> MongoDB
+            (cors, json)   (/api/...)        (/users/...)       (auth checks)   (the work)
+                                                                                
+response <------ res.status(...).json(...) <------------
+           (any error goes to middleware/errorHandler.js instead)
